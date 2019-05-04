@@ -5,20 +5,20 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.1.1.RELEASE</version>
+		<version>2.1.4.RELEASE</version>
 	</parent>
 
-	<groupId>com.orangehaswing</groupId>
-	<artifactId>actuatormonitor</artifactId>
+	<groupId>springboot-orangehaswing</groupId>
+	<artifactId>docker</artifactId>
 	<version>1.0</version>
-	<name>actuatormonitor</name>
+	<name>docker</name>
+
+	<packaging>jar</packaging>
 
 	<properties>
 		<java.version>1.8</java.version>
 		<docker.image.prefix>springboot</docker.image.prefix>
 	</properties>
-
-	<packaging>jar</packaging>
 
 	<dependencies>
 		<dependency>
@@ -34,15 +34,17 @@
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
 
-		<!--<dependency>-->
-			<!--<groupId>org.springframework.boot</groupId>-->
-			<!--<artifactId>spring-boot-starter-tomcat</artifactId>-->
-			<!--<scope>provided</scope>-->
-		<!--</dependency>-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
 	</dependencies>
+
 
 	<build>
 		<plugins>
